@@ -13,6 +13,7 @@ export default {
     ListItem,
   },
   created() {
+    // 스피너
     bus.$emit('start:spinner');
     setTimeout(()=> {
       this.$store.dispatch('FETCH_NEWS')

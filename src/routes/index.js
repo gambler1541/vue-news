@@ -4,6 +4,7 @@ import NewsView from '../views/NewsView.vue'
 import JobsView from '../views/JobsView.vue'
 import UserView from '../views/UserView.vue'
 import ItemView from '../views/ItemView.vue'
+// import createListView from '../views/CreateListView'
 
 export default createRouter({ 
     history: createWebHistory(process.env.BASE_URL),
@@ -17,17 +18,20 @@ export default createRouter({
             path:'/news',
             name: 'news',
             // component: url 주소로 갔을 때 표시될 컴포넌트
-            component: NewsView
+            // component: createListView('NewsView'), 
+            component: NewsView,
         },
         {
             path:'/jobs',
             name:'jobs',
-            component: JobsView
+            // component: createListView('JobsView'),
+            component: JobsView,
         },
         {
             path:'/ask',
             name:'ask',
-            component: AskView
+            // component: createListView('AskView'),
+            component: AskView,
         },
         {
             path: '/user/:id',

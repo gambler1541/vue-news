@@ -7,13 +7,16 @@
 <script>
 import ListItem from '../components/ListItem'
 // import bus from '../utils/eventbus'
-import Mixin from '../mixins/ListMixin'
+import ListMixin from '../mixins/ListMixin'
 
 export default {
   components : {
       ListItem,
   },
-  mixins: [Mixin],
+  // mounted() {
+  //   bus.$emit('end:spinner');
+  // }
+  mixins: [ListMixin],
   // created() {
   //   bus.$emit('start:spinner');
   //   setTimeout(()=> {

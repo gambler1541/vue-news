@@ -20,11 +20,11 @@ const fetchAskList = () => {
 }
 
 const fetchUserInfo = (userName) => {
-    return axios.get(`${config.baseUrl}user/${userName}.json`);
+    return axios.get(`${config.baseUrl}/user/${userName}.json`);
 }
 
 const fetchItemInfo = (id) => {
-    return axios.get(`${config.baseUrl}item/${id}.json`)
+    return axios.get(`${config.baseUrl}/item/${id}.json`)
 }
 
 const fetchList = (pageName) => {

@@ -24,12 +24,17 @@
 <script>
 import ListItem from '../components/ListItem'
 // import bus from '../utils/eventbus'
+// import bus from '../utils/eventbus'
 import ListMixin from '../mixins/ListMixin'
 
 export default {
   components : {
     ListItem,
   },
+  // mounted() {
+  //   // 인스턴스가 화면에 불러와졌을 때 실행되는 life-cycle hook
+  //   bus.$emit('end:spinner');
+  // },
   mixins: [ListMixin],
   // created() {
   //   bus.$emit('start:spinner');
